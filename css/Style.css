@@ -182,7 +182,7 @@ p{
 
 /* --------------- Site title ---------------- */
 main .site-title{
-    background: url('../assets/Background-image.gif');
+    background: url('../assets/Background-image.png');
     background-size: cover;
     height: 110vh;
     display: flex;
@@ -214,16 +214,17 @@ main .site-title .btn:hover{
 /* --------------- Blog Carousel ------------ */
 
 main .blog{
-    background: url('../assets/Abract01.png');
+    background: url('../assets/Background-image.gif');
     background-repeat: no-repeat;
-    background-position:right;
+    background-position:center;
     height: 100vh;
     width: 100%;
-    background-size: 69%;
+    background-size: 100%;
 }
 
 main .blog .blog-post{
     padding-top: 6rem;
+   
 }
 
 main .blog-post .blog-content{
@@ -231,9 +232,10 @@ main .blog-post .blog-content{
     flex-direction: column;
     text-align: center;
     width: 80%;
-    margin: 3rem 2rem;
+    margin: 1rem 1rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
     background-color: white;
+    border-radius: 20px;
 }
 
 main .blog-content .blog-title{

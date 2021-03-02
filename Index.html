@@ -41,27 +41,27 @@
             </div>
             <div>
                 <ul class="nav-items">
+               
                     <li class="nav-link">
-                        <a href="#">Inicio</a>
+                        <a href="#categoria">Categoria</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Categoria</a>
+                        <a href="#ofertas">Ofertas</a>
                     </li>
                     <li class="nav-link">
-                        <a href="Carrito.html">Ofertas</a>
+                        <a href="#accesorios">Accesorios</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Accesorios</a>
+                        <a href="#contacto">Contacto</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Contacto</a>
+                        <a href="Carrito.html">Tienda</a>
                     </li>
                 </ul>
             </div>
             <div class="social text-gray">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/Shopclass-1732015513756768" target="_back"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/shopclasss/" target="_back"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
@@ -79,7 +79,7 @@
             <div class="site-background" data-aos="fade-up" data-aos-delay="100">
                 <h1>EN TODO EL MUNDO</h1>
                 <h3>Estilo & Moda </h3>
-                <button class="btn">Navegación</button>
+                <button class="btn"onclick="location.href='Carrito.html'">Tienda</button>
             </div>
         </section>
 
@@ -169,7 +169,7 @@
                             <p>Nuestras instalaciones estan complemante equipadas y diseñadas para sentirte totalmente comodo.
                                 estamos 100% comprometidos de ofrecerte el mejor espacio  con las mejores instalaciones.
                             </p>
-                            <button class="btn post-btn">Mirar Tiendas &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            <button class="btn post-btn">Tienda &nbsp; <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
                     <hr>
@@ -185,7 +185,7 @@
                             <p>Contando con una inmensa variedad de estilos y conjuntos.
                                 "si no no lo encuentras nosotros lo encontramos por ti"
                             </p>
-                            <button class="btn post-btn">Ir a tienda &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            <button class="btn post-btn">Tienda &nbsp; <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
                     <hr>
@@ -214,8 +214,8 @@
                     </div>
                 </div>
                 <aside class="sidebar">
-                    <div class="category">
-                        <h2>Category</h2>
+                    <div class="category" id="categoria">
+                        <h2>Categoria</h2>
                         <ul class="category-list">
                             <li class="list-items" data-aos="fade-left" data-aos-delay="100">
                                 <a href="#">Jovenes</a>
@@ -239,7 +239,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="popular-post">
+                    <div class="popular-post" id="ofertas">
                         <h2>Ofertas</h2>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="200">
                             <div class="post-image">
@@ -304,14 +304,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
-                        <h2>Newsletter</h2>
-                        <div class="form-element">
-                            <input type="email" class="input-element" placeholder="Correo Electronico" required>
-                            <button class="btn form-btn">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="popular-tags">
+                    <div class="popular-tags" id="accesorios">
                         <h2>Tags Populares</h2>
                         <div class="tags flex-row">
                             <span class="tag" data-aos="flip-up" data-aos-delay="100">Aretes</span>
@@ -324,20 +317,25 @@
                             <span class="tag" data-aos="flip-up" data-aos-delay="800">Jeans</span>
                         </div>
                     </div>
+                    
+                 <!--post FACEBOOK-->
+                 <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=1953502438274740&amp;id=1732015513756768" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/permalink.php?story_fbid=1953502438274740&amp;id=1732015513756768" class="fb-xfbml-parse-ignore"><p>Luxurious Embroidery Tulle Princess Wedding Dress
+                    Real Photos</p>Publicada por <a href="https://www.facebook.com/Shopclass-1732015513756768/">Shopclass</a> en&nbsp;<a href="https://www.facebook.com/permalink.php?story_fbid=1953502438274740&amp;id=1732015513756768">Miércoles, 11 de julio de 2018</a></blockquote></div>
+
                 </aside>
             </div>
         </section>
 
-        <!-- -----------x---------- Site Content -------------x------------>
+        <!-- -----------x---------- end contenido del sitio -------------x------------>
 
     </main>
 
-    <!---------------x------------- Main Site Section ---------------x-------------->
+    <!---------------x------------- end menu section ---------------x-------------->
 
 
-    <!-- --------------------------- Footer ---------------------------------------- -->
+    <!-- --------------------------- footer ---------------------------------------- -->
 
-    <footer class="footer">
+    <footer class="footer" id="contacto">
         <div class="container">
             <div class="about-us" data-aos="fade-right" data-aos-delay="200">
                 <h2>¿Necesitas ayuda?</h2>
@@ -347,7 +345,7 @@
             <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
                 <h2>Correo Electronico</h2>
                 <div class="form-element">
-                    <input  type="email" placeholder="Correo electronico" required><span><i class="fas fa-chevron-right"></i></span>
+                    <input  type="email" placeholder="Correo electronico" required><span><i class="fas fa-chevron-right" onclick="location.href='mailto:mazon905@gmail.com'"></i></span>
                 </div>
             </div>
             <div class="instagram" data-aos="fade-left" data-aos-delay="200">
@@ -400,6 +398,10 @@
 
     <!-- Custom Javascript file -->
     <script src="./js/main.js"></script>
+    <!--Facebook-->
+    <script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v10.0" nonce="tipJxmNc">
+    </script>
 </body>
 
 </html>

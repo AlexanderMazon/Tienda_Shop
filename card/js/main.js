@@ -180,7 +180,7 @@ productsArray.push(
         'price': '1500',
         'quantity': '500'
     }
-
+    
     
 )
 
@@ -311,9 +311,14 @@ function addProductToCartModalDialog(i) {
     productPos.value = i
 }
 
+
 function validateStock(product, quantityToSell) {
-    if ((quantityToSell > product.quantity) || (quantityToSell < 0)) {
-        alert('The quantity is invalid')
+    if ((quantityToSell > product.quantity) || (quantityToSell > 100000)) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Has superado el numero maximo!',
+          })
         return false
     }
     return true
@@ -348,8 +353,15 @@ function addProductToCartArray(product, quantityToSell) {
 
     size = shoppingCartArray.length;
 
-    alert('quantity of products in the cart: ' + size)
+    
+    Swal.fire(
+        'Operación Exitosa!!',
+        'Se han agregado:'+ size +' productos al carrito de compras',
+        'success'
+      )
+    
 }
+
 
 function existsProductInCart(product, array) {
     for (let i = 0; i < array.length; i++) {
