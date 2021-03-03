@@ -30,155 +30,65 @@ let searchInputProduct = document.getElementById('searchInputProduct')
 let productsArray = [];
 
 let shoppingCartArray = [];
+let ProductsOfertasArray =[];
 
 // Default data
 productsArray.push(
     {
-        'name': 'chicken',
-        'image': 'https://i.blogs.es/8ceb02/pollo_entero/450_1000.jpg',
-        'description': 'it is delicious',
-        'price': '5000',
-        'quantity': '20'
+        'name': 'Work Uniform',
+        'image':'./card/im1.jpg',
+        'description': 'Tipo: Tela Lisa',
+        'price': '900.00',
+        'quantity': '30'
     },
     {
-        'name': 'sugar',
-        'image': 'https://www.getldi.com/wp-content/uploads/2017/09/bigstock-Bowl-and-scoop-with-white-sand-180259339.jpg',
-        'description': 'it is delicious',
-        'price': '800',
+        'name': 'Style Casual',
+        'image': './card/im2.jpg',
+        'description': 'Tipo: Tela lisa',
+        'price': '700.00',
         'quantity': '160'
     },
     {
-        'name': 'Rice',
-        'image': 'https://themom100.com/wp-content/uploads/2015/08/rice-in-bowl-horiz-with-spoon-copy.jpg',
-        'description': 'The rice is white',
-        'price': '1500',
-        'quantity': '500'
+        'name': 'Sports',
+        'image': './card/im3.jpg',
+        'description': 'Tipo: Tela Algodon',
+        'price': '560.00',
+        'quantity': '200'
     },
     {
-        'name': 'chicken',
-        'image': 'https://i.blogs.es/8ceb02/pollo_entero/450_1000.jpg',
-        'description': 'it is delicious',
-        'price': '5000',
+        'name': 'Pantalon Black',
+        'image': './card/im4.jpg',
+        'description': 'Tipo: Tela Algodon',
+        'price': '500.00',
         'quantity': '20'
     },
     {
-        'name': 'sugar',
-        'image': 'https://www.getldi.com/wp-content/uploads/2017/09/bigstock-Bowl-and-scoop-with-white-sand-180259339.jpg',
-        'description': 'it is delicious',
-        'price': '800',
+        'name': 'Saco Rosa Primaveral',
+        'image': './card/im5.jpg',
+        'description': 'Tipo: Tela lisa',
+        'price': '800.00',
         'quantity': '160'
     },
     {
-        'name': 'Rice',
-        'image': 'https://themom100.com/wp-content/uploads/2015/08/rice-in-bowl-horiz-with-spoon-copy.jpg',
-        'description': 'The rice is white',
-        'price': '1500',
+        'name': 'Saco AzuL Obscuro',
+        'image': './card/im6.jpg',
+        'description': 'Tipo: Terciopelo',
+        'price': '998.00',
         'quantity': '500'
     },
     {
-        'name': 'chicken',
-        'image': 'https://i.blogs.es/8ceb02/pollo_entero/450_1000.jpg',
-        'description': 'it is delicious',
-        'price': '5000',
+        'name': 'Saco Rosa Juvenil',
+        'image': './card/im7.jpg',
+        'description': 'Tipo: Tela Lana',
+        'price': '550.00',
         'quantity': '20'
     },
     {
-        'name': 'sugar',
-        'image': 'https://www.getldi.com/wp-content/uploads/2017/09/bigstock-Bowl-and-scoop-with-white-sand-180259339.jpg',
-        'description': 'it is delicious',
-        'price': '800',
-        'quantity': '160'
-    },
-    {
-        'name': 'Rice',
-        'image': 'https://themom100.com/wp-content/uploads/2015/08/rice-in-bowl-horiz-with-spoon-copy.jpg',
-        'description': 'The rice is white',
-        'price': '1500',
-        'quantity': '500'
-    },
-    {
-        'name': 'chicken',
-        'image': 'https://i.blogs.es/8ceb02/pollo_entero/450_1000.jpg',
-        'description': 'it is delicious',
-        'price': '5000',
+        'name': 'Conjunto pantalon',
+        'image': './card/im8.jpg',
+        'description': 'Tipo: Tela lisa',
+        'price': '500.00',
         'quantity': '20'
-    },
-    {
-        'name': 'sugar',
-        'image': 'https://www.getldi.com/wp-content/uploads/2017/09/bigstock-Bowl-and-scoop-with-white-sand-180259339.jpg',
-        'description': 'it is delicious',
-        'price': '800',
-        'quantity': '160'
-    },
-    {
-        'name': 'Rice',
-        'image': 'https://themom100.com/wp-content/uploads/2015/08/rice-in-bowl-horiz-with-spoon-copy.jpg',
-        'description': 'The rice is white',
-        'price': '1500',
-        'quantity': '500'
-    },
-    {
-        'name': 'chicken',
-        'image': 'https://i.blogs.es/8ceb02/pollo_entero/450_1000.jpg',
-        'description': 'it is delicious',
-        'price': '5000',
-        'quantity': '20'
-    },
-    {
-        'name': 'sugar',
-        'image': 'https://www.getldi.com/wp-content/uploads/2017/09/bigstock-Bowl-and-scoop-with-white-sand-180259339.jpg',
-        'description': 'it is delicious',
-        'price': '800',
-        'quantity': '160'
-    },
-    {
-        'name': 'Rice',
-        'image': 'https://themom100.com/wp-content/uploads/2015/08/rice-in-bowl-horiz-with-spoon-copy.jpg',
-        'description': 'The rice is white',
-        'price': '1500',
-        'quantity': '500'
-    }
-    ,  {
-        'name': 'chicken',
-        'image': 'https://i.blogs.es/8ceb02/pollo_entero/450_1000.jpg',
-        'description': 'it is delicious',
-        'price': '5000',
-        'quantity': '20'
-    },
-    {
-        'name': 'sugar',
-        'image': 'https://www.getldi.com/wp-content/uploads/2017/09/bigstock-Bowl-and-scoop-with-white-sand-180259339.jpg',
-        'description': 'it is delicious',
-        'price': '800',
-        'quantity': '160'
-    },
-    {
-        'name': 'Rice',
-        'image': 'https://themom100.com/wp-content/uploads/2015/08/rice-in-bowl-horiz-with-spoon-copy.jpg',
-        'description': 'The rice is white',
-        'price': '1500',
-        'quantity': '500'
-    },
-    {
-        'name': 'chicken',
-        'image': 'https://i.blogs.es/8ceb02/pollo_entero/450_1000.jpg',
-        'description': 'it is delicious',
-        'price': '5000',
-        'quantity': '20'
-    },
-    {
-        'name': 'sugar',
-        'image': 'https://www.getldi.com/wp-content/uploads/2017/09/bigstock-Bowl-and-scoop-with-white-sand-180259339.jpg',
-        'description': 'it is delicious',
-        'price': '800',
-        'quantity': '160'
-    },
-    {
-        'name': 'Rice',
-        'image': 'https://themom100.com/wp-content/uploads/2015/08/rice-in-bowl-horiz-with-spoon-copy.jpg',
-        'description': 'The rice is white',
-        'price': '1500',
-        'quantity': '500'
     }
     
     
@@ -236,12 +146,20 @@ searchInputProduct.addEventListener('keyup', e => {
 
     for (let i = 0; i < productsArray.length; i++) {
         const element = productsArray[i];
-        let en = element.name.toString().toLowerCase()
+        let en = element.name.toString().toLowerCase()//declara   una variable para mandar a traer elemento Nombre
+        let pric = element.price.toString().toLowerCase() //declara   una variable para mandar a traer elemento precio
         let sp = searchInputProduct.value.toString().toLowerCase()
         if (en.includes(sp)) {
             msg += show(element, i)
+            
             cont++
-        }        
+        }   
+        if (pric.includes(sp)) {
+            msg += show(element,i)
+            cont++
+        }   
+       
+
     }
     containerData.innerHTML = msg
 })
@@ -276,12 +194,13 @@ function show(product, i) {
                                 ${product.quantity}
                             </small>
                         </p>
+                        
                     </div>
                     
                     <button class="btn btn-outline-primary btn-block" data-toggle="modal"       data-target="#addProductToCartModal"
                     onclick="addProductToCartModalDialog(${i});">
                         <i class="fas fa-cart-plus"></i>
-                        Add
+                        Agregar al Carrito
                     </button>
                 </div>
             </div>
@@ -313,14 +232,21 @@ function addProductToCartModalDialog(i) {
 
 
 function validateStock(product, quantityToSell) {
-    if ((quantityToSell > product.quantity) || (quantityToSell > 100000)) {
+    if ((quantityToSell > product.quantity) || (quantityToSell => 100000 )) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Has superado el numero maximo!',
-          })
-        return false
+          })         
+    }if ((quantityToSell > product.quantity) || (quantityToSell => 0 )) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Valor agregado Incorrecto!',
+              })
+            return false
     }
+
     return true
 }
 
@@ -350,16 +276,13 @@ function addProductToCartArray(product, quantityToSell) {
     } else {
         shoppingCartArray[pos].quantity += quantityToSell;
     }
-
-    size = shoppingCartArray.length;
-
-    
     Swal.fire(
         'Operación Exitosa!!',
         'Se han agregado:'+ size +' productos al carrito de compras',
         'success'
       )
-    
+    size = shoppingCartArray.length;
+   
 }
 
 

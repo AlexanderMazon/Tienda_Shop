@@ -76,19 +76,15 @@
 
             <div class="row py-2 border-bottom">
 
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#productModal">
+               <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#productModal">
                     Agregar Producto
-                </button>
-                <DIV>
-                    <h6>VERSION.01 ---BETA CARRITO  BY EAM---- DESARROLLO-</h6>
-                </DIV>
-                
+                </button>-->       
                 <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="productModalLabel">Add Product</h5>
+                                <h5 class="modal-title" id="productModalLabel">Agregar Producto</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -119,7 +115,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    <button type="submit" class="btn btn-primary">Agregar al carrito</button>
                                 </div>
                             </form>
                         </div>
@@ -128,12 +124,13 @@
 
                 <form id="formSearchProduct" class="form-inline ml-auto">
                     <input class="form-control mr-sm-2" placeholder="Buscar Producto" type="search" name="" id="searchInputProduct">
-                    <button type="button" class="btn btn-dark" onclick="allProducts()">Todos</button>
+                    <button type="button" class="btn btn-success" onclick="allProducts()">Todos</button>
                 </form>
 
             </div>
                
-            <div class="row bg-white mt-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4" id="containerData">
+            <div class="row bg-white mt-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4" id="containerData"></div>
+            
                
             </div>
 
@@ -162,8 +159,8 @@
                             </div>
 
                             <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary">Add</button>
+                                <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Agregar</button>
                             </div>
                         </form>
                     </div>
