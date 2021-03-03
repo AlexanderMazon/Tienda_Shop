@@ -242,7 +242,7 @@ function validateStock(product, quantityToSell) {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Valor agregado Incorrecto!',
+                text: 'El valor ingresado es incorrecto!',
               })
             return false
     }
