@@ -238,7 +238,7 @@ function validateStock(product, quantityToSell) {
             title: 'Oops...',
             text: 'Has superado el numero maximo!',
           })         
-    }if ((quantityToSell > product.quantity) || (quantityToSell => 0 )) {
+    }if ((quantityToSell > product.quantity) || (quantityToSell <= 0 )) {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
